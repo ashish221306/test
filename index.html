@@ -1,41 +1,172 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>English to Hindi Typing Online - English2Hindi Converter </title>
+<meta property="og:image" content="http://typing.iamrohit.in/e2h.png" />
+<link rel="canonical" href="https://typing.iamrohit.in/english2hindi" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="jsapi.js"></script>
+<script type="text/javascript">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: chartreuse;
-        }
+// Load the Google Transliterate API
+google.load("elements", "1", {
+packages: "transliteration"
+});
 
-        body {
-            min-height: 100vh;
-            min-width: 100%;
-            transition: all 1s ease-in-out;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-        }
-    </style>
+function onLoad() {
+var options = {
+sourceLanguage:
+google.elements.transliteration.LanguageCode.ENGLISH,
+destinationLanguage:
+[google.elements.transliteration.LanguageCode.HINDI],
+shortcutKey: 'ctrl+g',
+transliterationEnabled: true
+};
+
+// Create an instance on TransliterationControl with the required
+// options.
+var control =
+new google.elements.transliteration.TransliterationControl(options);
+
+// Enable transliteration in the textbox with id
+// 'transliterateTextarea'.
+control.makeTransliteratable(['tp']);
+}
+google.setOnLoadCallback(onLoad);
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6645541031569203",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68403745-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-68403745-3');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".preloader").fadeOut("slow");
+})
+</script>
+<style>
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://lab.iamrohit.in/loader/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+</style>
 </head>
-
 <body>
-    <script>
-        var i = 0
-        setInterval(() => {
-            i++;
-            document.body.style.backgroundImage = `linear-gradient(${i * 20}deg,chartreuse,green,red)`
-        }, 100);
+<div class="preloader"></div>
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/english2hindi" style="font-size:18px;"><b><span style="color:red">English</span><span style="color:green">2</span><span style="color:black">Hindi</span></b></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="/english2hindi"> English2Hindi</a></li>
+<li><a href="/english2bengali"> English2Bengali</a></li>
+<li><a href="/english2gujarati"> English2Gujarati</a></li>
+<li><a href="/english2punjabi"> English2Punjabi</a></li>
+<li><a href="/english2kannada"> English2Kannada</a></li>
+<li><a href="/english2tamil"> English2Tamil</a></li>
+<li><a href="/english2telugu"> English2Telugu</a></li>
+<li><a href="/english2urdu"> English2Urdu</a></li>
+</ul>
+</div>
+</nav>
+<hr>gyu
+<div class="container">
+<div class="row">
+<div class="col-md-9">
 
-    </script>
+<div class="panel panel-default">
+<div class="panel-body">
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6645541031569203" data-ad-slot="4945816577" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 style="text-align:center"> <b>English to Hindi Typing Online</b></h1>
+</div>
+<div class="panel-body">
+<textarea id="tp" name="tp" class="form-control" rows="8" placeholder='Start Typing...(eg: "Mera naam rohit hai" becomes "मेरा नाम रोहित है")'></textarea>
+<b style="color:red">Note: </b>Use <b>Ctrl+g</b> to toggle between English and Hindi<hr>
+<p style="text-align:left">Are you looking for <b>English to Hindi typing editor</b>? If yes then you have reached on right place here i have created simple online English to Hindi converter tool using google transliterate API which automatically convert English words into Hindi words. If you are not fluent in Hindi typing then you can simply type English words and this tool quickly convert your all English words into Hindi words and you can copy all the converted paragraph and paste on your website/blog any where which support Hindi fonts.</p>
+<b>Tags: </b> English 2 Hindi, Hinglish to Hindi Typing Online, Type in Hindi, Hindi online typing, Type Online Hindi, Type Hindi, Hindi Typing, English to Hindi, English to Hindi Translation, Convert English to Hindi<br /><br />
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6645541031569203" data-ad-slot="4945816577" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+</div>
+<div class="col-md-3">
+<ul class="list-group">
+<li class="list-group-item"><b><a href="/english2amharic"> English to Amharic Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2arabic"> English to Arabic Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2bengali"> English to Bengali Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2chinese"> English to Chinese Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2greek"> English to Greek Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2gujarati"> English to Gujarati Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2hindi"> English to Hindi Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2kannada"> English to Kannada Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2malayalam"> English to Malayalam Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2marathi"> English to Marathi Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2nepali"> English to Nepali Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2oriya"> English to Oriya Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2persian"> English to Persian Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2punjabi"> English to Punjabi Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2russian"> English to Russian Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2sanskrit"> English to Sanskrit Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2serbian"> English to Serbian Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2sinhalese"> English to Sinhalese Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2tamil"> English to Tamil Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2telugu"> English to Telugu Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2tigrinya"> English to Tigrinya Typing</a></b></li>
+<li class="list-group-item"><b><a href="/english2urdu"> English to Urdu Typing</a></b></li>
+</ul>
+</div>
+</div>
+<hr />
+<footer class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<p>Created By <a href="http://www.iamrohit.in">Rohit Kumar</a>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56bf2c1af6048441"></script>
 </body>
-
-</html>
